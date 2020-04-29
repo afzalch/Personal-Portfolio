@@ -5,12 +5,18 @@ $font: "Helvetica Neue";
 $white: #fff;
 $black: #252525;
 $maroon: #83333e;
-$off-whotte: #f2f4f5;
+$off-white: #f2f4f5;
 
 html,body {
     font-family: $font;
     font-size: 16px;
     margin: 0 0;
+    background-color: $black;
+    height: 100%;
+}
+
+body.light{
+    background-color: $off-white;
 }
 
 .container {
