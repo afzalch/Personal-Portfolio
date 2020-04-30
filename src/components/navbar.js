@@ -3,7 +3,10 @@ import { Link } from "gatsby"
 import styled from "styled-components";
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-
+// const NavbarWrapper = styled.ul`
+//   position: absolute;
+//   top: 12px;
+// `;
 const NavbarWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -43,7 +46,6 @@ const Switch = styled.label`
   input:checked span {
     background-color: #2196F3;
   }
-
   span {
     position: absolute;
     cursor: pointer;
@@ -94,7 +96,6 @@ export default () => (
         <Link to="/about" activeStyle={activeStyles}>About</Link>
       </nav>
     </Navigation>
-    <i className="fas fa-moon"></i>
     <ThemeToggler>
         {({ theme, toggleTheme }) => (
           <Switch>
