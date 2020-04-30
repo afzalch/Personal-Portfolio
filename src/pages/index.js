@@ -2,7 +2,7 @@ import React from "react"
 
 import Navbar from "../components/navbar"
 
-import "../styles/styles.scss"
+import 'font-awesome/css/font-awesome.min.css';
 
 const IndexPage = () => (
   <div>

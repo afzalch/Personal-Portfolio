@@ -25,52 +25,58 @@ const Navigation = styled.div`
       text-transform: uppercase:
       font-size: 0.75rem;
       color: grey;
-      &:last-child {
-        margin-right: 2px;
-      }
+      
     }
   }
 `;
 
-// const Switch = styled.label`
-//   position: relative;
-//   display: inline-block;
-//   width: 60px;
-//   height: 34px;
-//   input {
-//     opacity: 0;
-//     width: 0;
-//     height: 0;
-//   }
-//   input:checked span {
-//     background-color: #2196F3;
-//   }
+const Switch = styled.label`
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  input:checked span {
+    background-color: #2196F3;
+  }
 
-//   span {
-//     position: absolute;
-//     cursor: pointer;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background-color: #ccc;
-//     -webkit-transition: .4s;
-//     transition: .4s;
-//     border-radius: 34px;
-//   }
-//   span:before{
-//     position: absolute;
-//     content: "";
-//     height: 26px;
-//     width: 26px;
-//     left: 4px;
-//     bottom: 4px;
-//     background-color: white;
-//     -webkit-transition: .4s;
-//     transition: .4s;
-//     border-radius: 50%;
-//   }
-// `;
+  span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  span:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + span{
+    background-color: #2196F3;
+  }
+  input:checked + span:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+`;
 
 const activeStyles = {
   color: 'red'
@@ -88,22 +94,18 @@ export default () => (
         <Link to="/about" activeStyle={activeStyles}>About</Link>
       </nav>
     </Navigation>
+    <i className="fas fa-moon"></i>
     <ThemeToggler>
         {({ theme, toggleTheme }) => (
-          <label>
+          <Switch>
             <input
               type="checkbox"
               onChange={e => toggleTheme(e.target.checked ? 'light' : 'dark')}
               checked={theme === 'light'}
-            />{' '}
-            Dark mode
-          </label>
+            />
+            <span></span>
+          </Switch>
         )}
       </ThemeToggler>
   </NavbarWrapper>
 )
-
-{/* <label class="switch">
-<input type="checkbox" />
-<span class="slider round"></span>
-</label> */}

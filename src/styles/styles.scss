@@ -6,17 +6,27 @@ $white: #fff;
 $black: #252525;
 $maroon: #83333e;
 $off-white: #f2f4f5;
+$primary-color: #9A97F3;
+$heading-color: #818cab;
+$font-color: #e1e1ff;
 
 html,body {
     font-family: $font;
     font-size: 16px;
-    margin: 0 0;
+    margin: 0;
     background-color: $black;
+    padding: 0;
     height: 100%;
+    color: $font-color;
 }
 
 body.light{
+    $font-color: #424242;
+    $primary-color:#302AE6;
+    $heading-color: #292922;
+    $secondary-color: #536390;
     background-color: $off-white;
+    color: $font-color;
 }
 
 .container {
@@ -42,6 +52,9 @@ body.light{
     margin-top:90px;
 }
 
+h1{
+    color: $heading-color
+}
 
 // body {
 //     background-color: #252525;
