@@ -8,6 +8,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
+    "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-manifest": "^2.3.7",
     "gatsby-plugin-offline": "^3.1.5",
     "gatsby-plugin-react-helmet": "^3.2.5",
@@ -21,6 +22,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-icons": "^3.10.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
