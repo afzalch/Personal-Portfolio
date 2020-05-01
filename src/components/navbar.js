@@ -3,10 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components";
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-// const NavbarWrapper = styled.ul`
-//   position: absolute;
-//   top: 12px;
-// `;
+
 const NavbarWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -26,7 +23,7 @@ const Navigation = styled.div`
       text-decoration: none;
       letter-spacing: 1.75px;
       text-transform: uppercase:
-      font-size: 0.75rem;
+      font-size: 3rem;
       color: grey;
       
     }
