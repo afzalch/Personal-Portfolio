@@ -8,7 +8,8 @@ const NavbarWrapper = styled.div`
   position: absolute;
   top: 0;
   height: 80px;
-  width: 100%;
+  left: 10%;
+  width: 80%;
   z-index: 10;
   display: flex;
   align-items: center;
