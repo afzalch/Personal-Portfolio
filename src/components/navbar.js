@@ -14,7 +14,6 @@ const NavbarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #252525;
 `;
 
 const Navigation = styled.div`
@@ -108,3 +107,6 @@ export default () => (
       </ThemeToggler>
   </NavbarWrapper>
 )
+
+
+// background-color: #252525;
