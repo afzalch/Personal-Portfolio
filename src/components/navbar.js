@@ -107,6 +107,3 @@ export default () => (
       </ThemeToggler>
   </NavbarWrapper>
 )
-
-
-// background-color: #252525;
