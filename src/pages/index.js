@@ -1,8 +1,6 @@
 import React from "react"
 import Navbar from "../components/navbar"
-import Resume from "../Resume.pdf";
-
-import 'font-awesome/css/font-awesome.min.css';
+import Footer from "../components/footer";
 
 import '../styles/styles.scss';
 
@@ -10,13 +8,10 @@ const IndexPage = () => (
   <div>
     <Navbar/>
     <div className="content">
-      <h1><a href="https://github.com/afzalch">Github</a></h1>
-      <h1><a href="https://www.linkedin.com/in/afzal-chishti/">Linkedin</a></h1>
-      {/* Create a button for resume on home page */}
-      {/* <button>Resume</button> */}
-      {/* <button><object src="../Resume.pdf" width="100%" height="100%">Resume</object></button> */}
-      <a href={Resume} target="_blank" rel="nofollow noopener noreferrer">Resume</a>
+    <h1>Work</h1>
+      <h3>I am working as a devops engineer for IBM Security Guardium Insights. My role entails incorporating other technologies with the product. Recently, I was in charge of incorporating IBM Db2 warehouse with the product for the previous release. In the the upcoming release, I'm in charge of supporting development teams as well as testing upgrade of Db2 warehouse to the latest version.</h3>
     </div>
+    <Footer/>
   </div>
 )
 
