@@ -1,5 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import { Link } from "gatsby"
+// import PropTypes from "prop-types"
+import {FaGithub} from "react-icons/fa";
 import styled from "styled-components";
 import React, {Component} from "react"
 
@@ -17,9 +18,16 @@ class Project extends Component {
     }
 
     render(){
+        // add list of icons 
+        // for 
         return (
             <CardWrapper>
                 <h1>{this.props.title}</h1>
+                <p>{this.props.description}</p>
+                <img src={this.props.img}/ >
+                <button>
+                    <FaGithub />
+                </button>
             </CardWrapper>
         );
     }
