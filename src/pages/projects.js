@@ -7,8 +7,8 @@ const SecondPage = () => (
   <div>
     <Navbar/>
     <div className="content">
-      <Project title="Konnichiwa" />
-      <Project title="Sayonara" />
+      <Project title="Laser Defender" img="/images/laser-defender.jpg"/>
+      <Project title="DS-Algorithms" img="/images/ds-algorithms.png"/>
     </div>
     <Footer/>
   </div>

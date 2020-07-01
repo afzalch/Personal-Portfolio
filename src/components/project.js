@@ -7,12 +7,17 @@ import styled from "styled-components";
 import React, {Component} from "react"
 
 const CardWrapper = styled.div`
-    border: 3px solid gray;
     float: left;
     width: 45%;
+    height: 40%;
     margin: 0 1rem;
+    overflow: hidden;
 `;
 
+const ImgWrapper = styled.img`
+    width: 600px;
+    height: 300px;
+`;
 
 class Project extends Component {
     constructor(props){
@@ -26,19 +31,23 @@ class Project extends Component {
         //     icons.push(<button><{element}/></button>)
         // }
         return (
+            // <CardWrapper>
+            //     <h1>{this.props.title}</h1>
+            //     <p>{this.props.description}</p>
+            //     <img src={this.props.img}/ >
+            //     <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
+            //     <div>
+            //         <FaGithub />
+            //     </div>
+            //     </IconContext.Provider>
+            //     <button>
+            //         <FaGithub />
+            //         Source
+            //     </button>
+            // </CardWrapper>
             <CardWrapper>
-                <h1>{this.props.title}</h1>
-                <p>{this.props.description}</p>
-                <img src={this.props.img}/ >
-                <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
-                <div>
-                    <FaGithub />
-                </div>
-                </IconContext.Provider>
-                <button>
-                    <FaGithub />
-                    Source
-                </button>
+                <ImgWrapper src={this.props.img} />
+                <h2>{this.props.title}</h2>
             </CardWrapper>
         );
     }
