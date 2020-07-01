@@ -19,7 +19,10 @@ class Project extends Component {
 
     render(){
         // add list of icons 
-        // for 
+        icons=[]
+        for (element in this.props.icons)  {
+            icons.push(<button><{element}/></button>)
+        }
         return (
             <CardWrapper>
                 <h1>{this.props.title}</h1>
