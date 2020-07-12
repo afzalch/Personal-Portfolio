@@ -25,6 +25,9 @@ const socialStyle = {
 const buttonStyle = {
   fontSize: "25px",
   margin: "10px",
+  color: "black",
+  backgroundColor: "purple",
+  border: "none"
 };
 
 export default () => (

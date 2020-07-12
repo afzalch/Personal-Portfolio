@@ -7,14 +7,16 @@ import styled from "styled-components";
 import React, {Component} from "react"
 
 const CardWrapper = styled.div`
+    position: relative;
     float: left;
     width: 45%;
     height: 40%;
     margin: 0 1rem;
     overflow: hidden;
 
+
     .overlay {
-        top: 0;
+        top: 30%;
         bottom: 0;
         left: 0;
         right: 0;
@@ -22,6 +24,8 @@ const CardWrapper = styled.div`
         width: 100%;
         opacity: 0;
         transition: .5s ease;
+        text-align: center;
+        position: absolute;
     }
 
     &:hover .overlay {
