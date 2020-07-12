@@ -6,7 +6,7 @@
   "author": "Afzal Chishti <afzalmchishti@gmail.com>",
   "dependencies": {
     "gatsby": "^2.20.35",
-    "gatsby-cli": "^2.12.17",
+    "gatsby-cli": "^2.12.60",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-dark-mode": "^1.1.1",
     "gatsby-plugin-manifest": "^2.3.7",

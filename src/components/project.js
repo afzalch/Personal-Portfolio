@@ -2,7 +2,7 @@
 // import PropTypes from "prop-types"
 // import {FaGithub, FaReact, FaHtml5, FaPython, FaJava, Fa} from "react-icons/fa";
 // import {DiJavaScript} from "react-icons/"
-import { IconContext } from "react-icons";
+// import { IconContext } from "react-icons";
 import styled from "styled-components";
 import React, {Component} from "react"
 
@@ -12,6 +12,21 @@ const CardWrapper = styled.div`
     height: 40%;
     margin: 0 1rem;
     overflow: hidden;
+
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    &:hover .overlay {
+        opacity: 1
+    }
 `;
 
 const ImgWrapper = styled.img`
@@ -47,7 +62,10 @@ class Project extends Component {
             // </CardWrapper>
             <CardWrapper>
                 <ImgWrapper src={this.props.img} />
-                <h2>{this.props.title}</h2>
+                <h2><a href={this.props.link}>{this.props.title}</a></h2>
+                <div className="overlay">
+                    <h2>{this.props.title}</h2>
+                </div>
             </CardWrapper>
         );
     }
