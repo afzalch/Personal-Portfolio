@@ -9,11 +9,11 @@ import React, {Component} from "react"
 const CardWrapper = styled.div`
     position: relative;
     float: left;
-    width: 45%;
+    width: 35%;
     height: 40%;
-    margin: 0 1rem;
+    margin: 0 0;
     overflow: hidden;
-
+    text-align: center;
 
     .overlay {
         top: 30%;
@@ -24,7 +24,6 @@ const CardWrapper = styled.div`
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        text-align: center;
         position: absolute;
     }
 
