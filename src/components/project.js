@@ -1,8 +1,6 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-// import {FaGithub, FaReact, FaHtml5, FaPython, FaJava, Fa} from "react-icons/fa";
-// import {DiJavaScript} from "react-icons/"
-// import { IconContext } from "react-icons";
+import {FaGithub, FaReact, FaHtml5, FaPython, FaJava, FaTwitter, FaUnity} from "react-icons/fa";
 import styled from "styled-components";
 import React, {Component} from "react"
 
@@ -16,7 +14,7 @@ const CardWrapper = styled.div`
     text-align: center;
 
     .overlay {
-        top: 30%;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
@@ -25,10 +23,21 @@ const CardWrapper = styled.div`
         opacity: 0;
         transition: .5s ease;
         position: absolute;
+        background-color: grey;
     }
 
     &:hover .overlay {
-        opacity: 1
+        opacity: 0.5;
+    }
+
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 `;
 
@@ -44,10 +53,7 @@ class Project extends Component {
 
     render(){
         // add list of icons 
-        // icons=[]
-        // for (element in this.props.icons)  {
-        //     icons.push(<button><{element}/></button>)
-        // }
+        const icons = this.props.icons.map(icon => <span>{icon}</span>)
         return (
             // <CardWrapper>
             //     <h1>{this.props.title}</h1>
@@ -67,7 +73,10 @@ class Project extends Component {
                 <ImgWrapper src={this.props.img} />
                 <h2><a href={this.props.link}>{this.props.title}</a></h2>
                 <div className="overlay">
-                    <h2>{this.props.title}</h2>
+                    <div className="text">
+                        <h2>{this.props.title}</h2>
+                        {icons}
+                    </div>
                 </div>
             </CardWrapper>
         );
