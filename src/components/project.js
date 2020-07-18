@@ -8,25 +8,33 @@ const CardWrapper = styled.div`
     position: relative;
     float: left;
     width: 35%;
-    height: 40%;
-    margin: 0 0;
-    overflow: hidden;
-    text-align: center;
+    height: 40%:
+    margin: auto;
+`;
+
+const ImgWrapper = styled.div`
+    width: 90%;
+    height: auto; 
+    position: relative;
+
+    .img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
 
     .overlay {
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
-        width: 100%;
         opacity: 0;
         transition: .5s ease;
         position: absolute;
         background-color: grey;
     }
 
-    &:hover .overlay {
+    :hover .overlay {
         opacity: 0.5;
     }
 
@@ -41,9 +49,14 @@ const CardWrapper = styled.div`
     }
 `;
 
-const ImgWrapper = styled.img`
-    width: 600px;
-    height: 300px;
+const Tags = styled.p`
+    display: inline;
+    color: powderblue;
+`;
+
+const Title = styled.h2`
+    padding: 15px;
+    text-align: center
 `;
 
 class Project extends Component {
@@ -54,16 +67,18 @@ class Project extends Component {
     render(){
         return (
             <CardWrapper>
-                <ImgWrapper src={this.props.img} />
-                <h2><a href={this.props.link}>{this.props.title}</a></h2>
+                <ImgWrapper>              
+                <img src={this.props.img} className="img"/>
                 <div className="overlay">
                     <div className="text">
                         <h2>{this.props.title}</h2>
                         {this.props.tags.map((tag, index) => (
-                        <p key={index}> # {tag}</p> 
+                        <Tags key={index}> #{tag}</Tags> 
                         ))} 
                     </div>
                 </div>
+                </ImgWrapper>
+                <Title><a href={this.props.link}>{this.props.title}</a></Title>
             </CardWrapper>
         );
     }
