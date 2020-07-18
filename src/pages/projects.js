@@ -7,8 +7,8 @@ const SecondPage = () => (
   <div>
     <Navbar/>
     <div className="content">
-      <Project title="Laser Defender" img="/images/laser-defender.jpg" icons={['FaUnity']}/>
-      <Project title="DS-Algorithms" img="/images/ds.jpg"  icons={['FaReadme']}/>
+      <Project title="Laser Defender" img="/images/laser-defender.jpg" tags={['game-dev','unity', 'C#']}/>
+      <Project title="DS-Algorithms" img="/images/ds.jpg"  tags={['Documentation', 'data-structures', 'algorithms']}/>
     </div>
     <Footer/>
   </div>

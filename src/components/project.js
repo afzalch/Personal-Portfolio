@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import {FaGithub, FaReact, FaHtml5, FaPython, FaJava, FaTwitter, FaUnity} from "react-icons/fa";
+// import {FaGithub, FaReact, FaHtml5, FaPython, FaJava, FaTwitter, FaUnity} from "react-icons/fa";
 import styled from "styled-components";
 import React, {Component} from "react"
 
@@ -52,30 +52,16 @@ class Project extends Component {
     }
 
     render(){
-        // add list of icons 
-        const icons = this.props.icons.map(icon => <span>{icon}</span>)
         return (
-            // <CardWrapper>
-            //     <h1>{this.props.title}</h1>
-            //     <p>{this.props.description}</p>
-            //     <img src={this.props.img}/ >
-            //     <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
-            //     <div>
-            //         <FaGithub />
-            //     </div>
-            //     </IconContext.Provider>
-            //     <button>
-            //         <FaGithub />
-            //         Source
-            //     </button>
-            // </CardWrapper>
             <CardWrapper>
                 <ImgWrapper src={this.props.img} />
                 <h2><a href={this.props.link}>{this.props.title}</a></h2>
                 <div className="overlay">
                     <div className="text">
                         <h2>{this.props.title}</h2>
-                        {icons}
+                        {this.props.tags.map((tag, index) => (
+                        <p key={index}> # {tag}</p> 
+                        ))} 
                     </div>
                 </div>
             </CardWrapper>
