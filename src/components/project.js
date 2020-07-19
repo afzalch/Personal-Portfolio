@@ -7,27 +7,29 @@ import React, {Component} from "react"
 const CardWrapper = styled.div`
     position: relative;
     float: left;
-    width: 35%;
+    width: 33%;
     height: 40%:
     margin: auto;
 `;
 
 const ImgWrapper = styled.div`
-    width: 90%;
+    width: auto;
     height: auto; 
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
 
     .img {
         max-width: 100%;
         max-height: 100%;
-        margin: auto;
+        margin:0 auto;
     }
 
     .overlay {
         top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        bottom: 0.5%;
+        left: 5%;
+        right: 5%;
         opacity: 0;
         transition: .5s ease;
         position: absolute;
@@ -44,7 +46,7 @@ const ImgWrapper = styled.div`
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -80%);
         text-align: center;
     }
 `;
