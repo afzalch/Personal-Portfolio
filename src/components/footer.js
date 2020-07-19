@@ -24,11 +24,18 @@ const socialStyle = {
 
 const buttonStyle = {
   fontSize: "25px",
-  margin: "10px",
+  margin: "10px 10px",
   color: "black",
-  backgroundColor: "purple",
-  border: "none"
+  backgroundColor: "#7200c6",
+  border: "none",
+  opacity: 0.6,
+  boxShadow: "1px 2.5px #252525",
+  verticalAlign: "middle",
 };
+
+const resume = {
+  paddingBottom: "0.6%",
+}
 
 export default () => (
   <FooterWrapper>
@@ -38,7 +45,7 @@ export default () => (
     <a href="https://www.linkedin.com/in/afzal-chishti/" style={socialStyle}>
       <FaLinkedin />  
     </a>
-    <a href={Resume} target="_blank" rel="nofollow noopener noreferrer">
+    <a href={Resume} target="_blank" rel="nofollow noopener noreferrer" style={resume}> 
       <button style={buttonStyle}>
         <FaFilePdf/>
         Resume
