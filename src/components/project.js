@@ -6,7 +6,7 @@ import React, {Component} from "react"
 
 const CardWrapper = styled.div`
     position: relative;
-    float: left;
+    float: right;
     width: 33%;
     height: 40%:
     margin: auto;
@@ -73,7 +73,7 @@ class Project extends Component {
                 <img src={this.props.img} className="img"/>
                 <div className="overlay">
                     <div className="text">
-                        <h2>{this.props.title}</h2>
+                        <h4>{this.props.description}</h4>
                         {this.props.tags.map((tag, index) => (
                         <Tags key={index}> #{tag}</Tags> 
                         ))} 
