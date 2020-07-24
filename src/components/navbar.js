@@ -13,8 +13,6 @@ const NavbarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom-style: solid;
-  border-color: gray;
   background-color: #222222;
 `;
 
