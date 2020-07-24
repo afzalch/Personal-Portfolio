@@ -6,15 +6,14 @@ import {FaGithub, FaLinkedin, FaFilePdf} from "react-icons/fa";
 const FooterWrapper = styled.div`
   position: relative;
   bottom: 0;
-  height: 80px;
-  left: 10%;
-  width: 80%;
+  padding-top: 10px;
+  height: 60px;
+  width: 100%;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-style: solid;
-  border-color: gray;
+  background-color: #444444;
 `;
 
 const socialStyle = {
@@ -22,19 +21,20 @@ const socialStyle = {
   margin: "15px",
 };
 
-const buttonStyle = {
-  fontSize: "25px",
-  margin: "10px 10px",
-  color: "black",
-  backgroundColor: "#7200c6",
-  border: "none",
-  opacity: 0.6,
-  boxShadow: "1px 2.5px #252525",
-  verticalAlign: "middle",
-};
+// const buttonStyle = {
+//   fontSize: "25px",
+//   margin: "10px 10px",
+//   color: "black",
+//   backgroundColor: "#7200c6",
+//   border: "none",
+//   opacity: 0.6,
+//   boxShadow: "1px 2.5px #252525",
+//   verticalAlign: "middle",
+// };
 
 const resume = {
-  paddingBottom: "0.6%",
+  margin: "15px",
+  fontSize: "35px",
 }
 
 export default () => (
@@ -46,10 +46,11 @@ export default () => (
       <FaLinkedin />  
     </a>
     <a href={Resume} target="_blank" rel="nofollow noopener noreferrer" style={resume}> 
-      <button style={buttonStyle}>
+      {/* <button style={buttonStyle}>
         <FaFilePdf/>
         Resume
-      </button>
+      </button> */}
+      <FaFilePdf/>
     </a>
   </FooterWrapper>
 )

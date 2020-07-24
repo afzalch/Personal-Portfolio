@@ -7,7 +7,7 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 const NavbarWrapper = styled.div`
   position: absolute;
   top: 0;
-  height: 45px;
+  height: 50px;
   width: 100%;
   z-index: 10;
   display: flex;
@@ -15,45 +15,62 @@ const NavbarWrapper = styled.div`
   justify-content: space-between;
   border-bottom-style: solid;
   border-color: gray;
-  background-color: darkslategray;
+  background-color: #222222;
 `;
 
-const Navigation = styled.div`
-  width: 80%;
-  nav {
-    a {
-      margin: 0 20px;
-      text-decoration: none;
-      letter-spacing: 1.75px;
-      text-transform: uppercase:
-      font-size: 3rem;
-      color: grey;
-    }
-    a:hover {
-      color: #0FDAC1;
-    }
+const Navigation = styled.nav`
+  margin-right: auto;
+  margin-left: auto;
+  h1{
+    display: inline;
+    padding: 10px 20px;
+  }
+  a{
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1.75px;
+    text-transform: uppercase:
+    font-size: 2rem;
+    color: grey;
+    text-align: left;
+  }
+  a:hover {
+    color: green;
+    letter-spacing: 6px;
+  }
+
+  a:after, a:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: " ";
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+  }
+
+  a:hover:after, a:hover:before {
+    backface-visibility: hidden;
+    border-color: red;
+    transition: width 10000ms ease-in-out;
+    width: 70%;
   }
 `;
 
 const activeStyles = {
-  color: 'red'
+  color: 'red',
+  letterSpacing: '6px',
 };
-
-const h1style = {
-  display: "inline"
-};
-
 export default () => (
   <NavbarWrapper>
     <div className="logo">
       {/* Add logo image here */}
     </div>
     <Navigation>
-      <nav>
-        <h1 style={h1style}><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
-        <h1 style={h1style}><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
-        <h1 style={h1style}><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
-      </nav>
+        <h1><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
+        <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
+        <h1><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
     </Navigation>
   </NavbarWrapper>
 )

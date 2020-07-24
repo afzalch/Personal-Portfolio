@@ -6,7 +6,7 @@ import React, {Component} from "react"
 
 const CardWrapper = styled.div`
     position: relative;
-    float: right;
+    float: left;
     width: 33%;
     height: 40%:
     margin: auto;
@@ -58,7 +58,12 @@ const Tags = styled.p`
 
 const Title = styled.h2`
     padding: 15px;
-    text-align: center
+    text-align: center;
+    a {
+        display:inline-block;
+        text-decoration: none;
+        color: white;
+    }
 `;
 
 class Project extends Component {
