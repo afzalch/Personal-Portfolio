@@ -8,6 +8,8 @@ const IndexPage = () => (
   <div>
     <Navbar/>  
     <div className="content">
+      
+      
       <div className="section">
         <h1>What Do I Do?</h1>
         <h2>
@@ -17,10 +19,13 @@ const IndexPage = () => (
           It's all about making the deadlines as stress-free as possible by finding issues in the code and bringing these issues up with the developers, so that the issues can be dealt with promptly.
           <br />
           If developers are to be considered as chefs, my role could be described as a head chef as I approve and polish the dishes(code) before they reach the customer. 
-
-
         </h2>
       </div>
+
+      <div className="section-alt">
+
+      </div>
+
     </div>
     <Footer/>
   </div>

@@ -4,7 +4,7 @@ import Resume from "../Resume.pdf";
 import {FaGithub, FaLinkedin, FaFilePdf} from "react-icons/fa";
 
 const FooterWrapper = styled.div`
-  position: relative;
+  position: absolute;
   bottom: 0;
   padding-top: 10px;
   height: 60px;
@@ -13,13 +13,21 @@ const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #444444;
+  background-color: #1d1e22;
 `;
 
-const socialStyle = {
-  fontSize: "40px",
-  margin: "15px",
-};
+const SocialStyle = styled.a`
+  font-size: 40px;
+  margin: 15px;
+
+  &:hover {
+    font-size: 50px
+  }
+`;
+// const socialStyle = {
+//   fontSize: "40px",
+//   margin: "15px",
+// };
 
 // const buttonStyle = {
 //   fontSize: "25px",
@@ -32,25 +40,34 @@ const socialStyle = {
 //   verticalAlign: "middle",
 // };
 
-const resume = {
-  margin: "15px",
-  fontSize: "35px",
-}
+const Document = styled.a`
+  font-size: 35px;
+  margin: 15px;
+
+  &:hover {
+    font-size: 40px;
+  }
+`;
+
+// const resume = {
+//   margin: "15px",
+//   fontSize: "35px",
+
+//   // :hover {
+//   //   fontSize: "45px",
+//   // }
+// }
 
 export default () => (
   <FooterWrapper>
-    <a href="https://github.com/afzalch" style={socialStyle}>
+    <SocialStyle href="https://github.com/afzalch" >
       <FaGithub />
-    </a>
-    <a href="https://www.linkedin.com/in/afzal-chishti/" style={socialStyle}>
+    </SocialStyle>
+    <SocialStyle href="https://www.linkedin.com/in/afzal-chishti/">
       <FaLinkedin />  
-    </a>
-    <a href={Resume} target="_blank" rel="nofollow noopener noreferrer" style={resume}> 
-      {/* <button style={buttonStyle}>
-        <FaFilePdf/>
-        Resume
-      </button> */}
+    </SocialStyle>
+    <Document> 
       <FaFilePdf/>
-    </a>
+    </Document>
   </FooterWrapper>
 )

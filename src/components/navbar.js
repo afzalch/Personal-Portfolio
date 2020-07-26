@@ -13,7 +13,7 @@ const NavbarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222222;
+  background-color: #1d1e22;
 `;
 
 const Navigation = styled.nav`

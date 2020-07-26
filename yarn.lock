@@ -6171,10 +6171,10 @@ gatsby-cli@^2.11.21:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-cli@^2.12.60:
-  version "2.12.60"
-  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-cli/-/gatsby-cli-2.12.60.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-cli%2F-%2Fgatsby-cli-2.12.60.tgz#2e958fa97d778fafa327fce5e6c351f99f7c2cdd"
-  integrity sha1-LpWPqX13j6+jJ/zl5sNR+Z98LN0=
+gatsby-cli@^2.12.66:
+  version "2.12.66"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-cli/-/gatsby-cli-2.12.66.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-cli%2F-%2Fgatsby-cli-2.12.66.tgz#ef957664fb0d858dc34fb821ac2ecf995d73ef8d"
+  integrity sha1-75V2ZPsNhY3DT7ghrC7PmV1z740=
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@hapi/joi" "^15.1.1"
@@ -6189,9 +6189,9 @@ gatsby-cli@^2.12.60:
     execa "^3.4.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.12"
-    gatsby-recipes "^0.1.51"
-    gatsby-telemetry "^1.3.19"
+    gatsby-core-utils "^1.3.14"
+    gatsby-recipes "^0.1.56"
+    gatsby-telemetry "^1.3.23"
     hosted-git-info "^3.0.4"
     ink "^2.7.1"
     ink-spinner "^3.1.0"
@@ -6225,10 +6225,10 @@ gatsby-core-utils@^1.1.4:
     configstore "^5.0.1"
     node-object-hash "^2.0.0"
 
-gatsby-core-utils@^1.3.12:
-  version "1.3.12"
-  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-core-utils/-/gatsby-core-utils-1.3.12.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-core-utils%2F-%2Fgatsby-core-utils-1.3.12.tgz#4a35b1c4e61f967bb18640e983fd82199e48692a"
-  integrity sha1-SjWxxOYflnuxhkDpg/2CGZ5IaSo=
+gatsby-core-utils@^1.3.14:
+  version "1.3.14"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-core-utils/-/gatsby-core-utils-1.3.14.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-core-utils%2F-%2Fgatsby-core-utils-1.3.14.tgz#a830412a9edb87544bc0d1ad9c2556d33aa0d157"
+  integrity sha1-qDBBKp7bh1RLwNGtnCVW0zqg0Vc=
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
@@ -6442,10 +6442,10 @@ gatsby-recipes@^0.0.18:
     ws "^7.2.3"
     xstate "^4.8.0"
 
-gatsby-recipes@^0.1.51:
-  version "0.1.51"
-  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-recipes/-/gatsby-recipes-0.1.51.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-recipes%2F-%2Fgatsby-recipes-0.1.51.tgz#6419070fe5ef1332670c5ed235bcddd25db0bcc2"
-  integrity sha1-ZBkHD+XvEzJnDF7SNbzd0l2wvMI=
+gatsby-recipes@^0.1.56:
+  version "0.1.56"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-recipes/-/gatsby-recipes-0.1.56.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-recipes%2F-%2Fgatsby-recipes-0.1.56.tgz#f3f7a5f21602c11ab41d8d341dd1fb03bcd3c301"
+  integrity sha1-8/el8hYCwRq0HY00HdH7A7zTwwE=
   dependencies:
     "@babel/core" "^7.10.3"
     "@babel/generator" "^7.10.3"
@@ -6470,8 +6470,8 @@ gatsby-recipes@^0.1.51:
     express "^4.17.1"
     express-graphql "^0.9.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.12"
-    gatsby-telemetry "^1.3.19"
+    gatsby-core-utils "^1.3.14"
+    gatsby-telemetry "^1.3.23"
     glob "^7.1.6"
     graphql "^14.6.0"
     graphql-compose "^6.3.8"
@@ -6553,10 +6553,10 @@ gatsby-telemetry@^1.2.6:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-telemetry@^1.3.19:
-  version "1.3.19"
-  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-telemetry/-/gatsby-telemetry-1.3.19.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-telemetry%2F-%2Fgatsby-telemetry-1.3.19.tgz#ab10fc272eef130341669ae69f0901a38b6437f4"
-  integrity sha1-qxD8Jy7vEwNBZprmnwkBo4tkN/Q=
+gatsby-telemetry@^1.3.23:
+  version "1.3.23"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-carbon-npm-virtual/gatsby-telemetry/-/gatsby-telemetry-1.3.23.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2Fgatsby-telemetry%2F-%2Fgatsby-telemetry-1.3.23.tgz#16ebbf29e7744209a6bd6a59ab7746764e13cb1a"
+  integrity sha1-Fuu/Ked0QgmmvWpZq3dGdk4Tyxo=
   dependencies:
     "@babel/code-frame" "^7.10.3"
     "@babel/runtime" "^7.10.3"
@@ -6564,7 +6564,7 @@ gatsby-telemetry@^1.3.19:
     configstore "^5.0.1"
     envinfo "^7.5.1"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.12"
+    gatsby-core-utils "^1.3.14"
     git-up "4.0.1"
     is-docker "2.0.0"
     lodash "^4.17.15"
