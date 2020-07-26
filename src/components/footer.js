@@ -20,16 +20,15 @@ const SocialStyle = styled.a`
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 1.75vh;
-  // opacity: 0.45;
   color: #5a009c;
-  filter: grayscale(80%);
+  filter: grayscale(70%);
   bottom: 0;
+  transition: font-size 0.3s;
 
-  // &:hover {
-  //   filter: grayscale(0);
-  //   font-size: 50px;
-  //   opacity: 1;
-  // }
+  &:hover {
+    filter: grayscale(0%);
+    font-size: 50px;
+  }
 `;
 
 
@@ -39,12 +38,13 @@ const Document = styled.a`
   margin-right: 15px;
   margin-top: 1.3vh;
   color: #5a009c;
-  opacity: 0.45;
+  filter: grayscale(70%);
+  transition: font-size 0.3s;
 
-  // &:hover {
-  //   font-size: 45px;
-  //   opacity: 1;
-  // }
+  &:hover {
+    font-size: 45px;
+    filter: grayscale(0%);
+  }
 `;
 
 export default () => (
