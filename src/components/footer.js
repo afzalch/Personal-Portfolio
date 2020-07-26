@@ -7,7 +7,7 @@ const FooterWrapper = styled.div`
   position: absolute;
   bottom: 0;
   padding-top: 10px;
-  height: 60px;
+  height: 8vh;
   width: 100%;
   z-index: 10;
   display: flex;
@@ -19,10 +19,12 @@ const FooterWrapper = styled.div`
 const SocialStyle = styled.a`
   font-size: 40px;
   margin: 15px;
+  // opacity: 0.45;
   color: #5a009c;
-  opacity: 0.45;
+  filter: grayscale(80%);
 
   &:hover {
+    filter: grayscale(0);
     font-size: 50px;
     opacity: 1;
   }

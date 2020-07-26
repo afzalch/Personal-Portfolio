@@ -7,7 +7,7 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 const NavbarWrapper = styled.div`
   position: absolute;
   top: 0;
-  height: 50px;
+  height: 8vh;
   width: 100%;
   z-index: 10;
   display: flex;
