@@ -27,7 +27,7 @@ const IndexPage = () => (
 
       </div>
 
-      <div className="section"></div>
+      <div className="section last"></div>
 
     <Footer/>
   </div>
