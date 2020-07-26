@@ -24,21 +24,7 @@ const SocialStyle = styled.a`
     font-size: 50px
   }
 `;
-// const socialStyle = {
-//   fontSize: "40px",
-//   margin: "15px",
-// };
 
-// const buttonStyle = {
-//   fontSize: "25px",
-//   margin: "10px 10px",
-//   color: "black",
-//   backgroundColor: "#7200c6",
-//   border: "none",
-//   opacity: 0.6,
-//   boxShadow: "1px 2.5px #252525",
-//   verticalAlign: "middle",
-// };
 
 const Document = styled.a`
   font-size: 35px;
@@ -48,15 +34,6 @@ const Document = styled.a`
     font-size: 40px;
   }
 `;
-
-// const resume = {
-//   margin: "15px",
-//   fontSize: "35px",
-
-//   // :hover {
-//   //   fontSize: "45px",
-//   // }
-// }
 
 export default () => (
   <FooterWrapper>
