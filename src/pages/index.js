@@ -7,7 +7,6 @@ import '../styles/styles.scss';
 const IndexPage = () => (
   <div>
     <Navbar/>  
-    <div className="content">
       
       
       <div className="section">
@@ -26,7 +25,8 @@ const IndexPage = () => (
 
       </div>
 
-    </div>
+      <div className="section"></div>
+
     <Footer/>
   </div>
 )

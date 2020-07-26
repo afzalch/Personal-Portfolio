@@ -19,19 +19,25 @@ const FooterWrapper = styled.div`
 const SocialStyle = styled.a`
   font-size: 40px;
   margin: 15px;
+  color: #5a009c;
+  opacity: 0.45;
 
   &:hover {
-    font-size: 50px
+    font-size: 50px;
+    opacity: 1;
   }
 `;
 
 
 const Document = styled.a`
-  font-size: 35px;
+  font-size: 34px;
   margin: 15px;
+  color: #5a009c;
+  opacity: 0.45;
 
   &:hover {
-    font-size: 40px;
+    font-size: 45px;
+    opacity: 1;
   }
 `;
 
