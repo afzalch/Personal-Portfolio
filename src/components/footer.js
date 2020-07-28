@@ -23,7 +23,7 @@ const SocialStyle = styled.a`
   color: #5a009c;
   filter: grayscale(70%);
   bottom: 0;
-  transition: font-size 0.3s;
+  transition: font-size 0.15s;
 
   &:hover {
     filter: grayscale(0%);
@@ -39,7 +39,7 @@ const Document = styled.a`
   margin-top: 1.3vh;
   color: #5a009c;
   filter: grayscale(70%);
-  transition: font-size 0.3s;
+  transition: font-size 0.15s;
 
   &:hover {
     font-size: 45px;

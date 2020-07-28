@@ -65,9 +65,21 @@ body.light{
     width: 100%;
     height: 28vh;
     background-color: #414141;
-    white-space:nowrap;
     overflow:hidden;
+}
 
+.text{
+    margin-left: 2%;
+    width: 75%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.gallery {
+    width: 20%;
+    height: 24vh;
+    
 }
 
 // For sake of first component on page to address the positioning of the navbar
