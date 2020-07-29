@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer";
+// import Slideshow from "../components/slideshow";
 
 import '../styles/styles.scss';
 
@@ -22,6 +23,9 @@ const IndexPage = () => (
             <br />
             If developers are to be considered as chefs, my role could be described as a head chef as I approve and polish the dishes(code) before they reach the customer. 
           </h4>
+        </div>
+        <div className="gallery">
+          <img src="/images/gatsby-icon.png" className="gallery-image"></img>
         </div>
       </div>
 

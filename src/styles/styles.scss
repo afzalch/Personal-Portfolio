@@ -74,11 +74,20 @@ body.light{
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+    display: inline-block;
 }
 
 .gallery {
     width: 20%;
     height: 24vh;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 // For sake of first component on page to address the positioning of the navbar
