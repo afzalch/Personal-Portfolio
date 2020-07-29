@@ -66,22 +66,36 @@ body.light{
     height: 28vh;
     background-color: #414141;
     overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.section-alt {
+    width: 100%;
+    height: 28vh;
+    background-color: #313131;
+    white-space:nowrap;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .text{
-    margin-left: 2%;
+    padding-left: 0.5%;
     width: 75%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
     display: inline-block;
+    text-align: left;
 }
 
 .gallery {
     width: 20%;
     height: 24vh;
-    display: inline-block;
-    vertical-align: bottom;
 }
 
 .gallery-image {
@@ -99,10 +113,3 @@ body.light{
     margin-bottom: 9vh;
 }
 
-.section-alt {
-    width: 100%;
-    height: 28vh;
-    background-color: #313131;
-    white-space:nowrap;
-    overflow:hidden;
-}
