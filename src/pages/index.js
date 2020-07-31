@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer";
-// import Slideshow from "../components/slideshow";
+import Carousel from "../components/carousel";
 
 import '../styles/styles.scss';
 
@@ -25,7 +25,8 @@ const IndexPage = () => (
           </h4>
         </div>
         <div className="gallery">
-          <img src="/images/gatsby-icon.png" className="gallery-image"></img>
+          {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
+          <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]}/>
         </div>
       </div>
 
