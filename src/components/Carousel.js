@@ -7,18 +7,31 @@ const SlideShow = styled.div`
     height: 100%;
 `;
 
+const Figcaption = styled.figcaption`
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding-bottom: 5%;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);;
+`;
 
 const ImageSlide = (props) => {
-    const styles = {
+    const stylesImg = {
         width: "100%",
         height: "100%",
         objectFit: "cover"
     };
 
+    const styles = {
+        width: "100%",
+        height: "100%"
+    };
+
     return (
-        <div>
-            <img src={props.image} className="image-slide" style={styles}/>
-            <figcaption>{props.desc}</figcaption>
+        <div style={styles}>
+            <img src={props.image} className="image-slide" style={stylesImg}/>
+            <Figcaption>{props.desc}</Figcaption>
         </div>
     );
 }
@@ -72,9 +85,9 @@ class Carousel extends Component{
                 direction="left"
                 clickFunction={ this.previousSlide }
                 glyph="&#9664;" />
-                <div className="gallery-image">
+                {/* <div className="gallery-image"> */}
                 <ImageSlide image={this.props.images[this.state.currentImageIndex]} desc={this.props.description[this.state.currentImageIndex]}/>
-                </div>
+                {/* </div> */}
                 <Arrow
                 direction="right"
                 clickFunction={ this.nextSlide }
