@@ -85,13 +85,21 @@ body.light{
 
 
 .text{
-    padding-left: 0.5%;
     width: 75%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
     display: inline-block;
+}
+
+.left {
+    padding-left: 0.5%;
     text-align: left;
+}
+
+.right {
+    padding-right: 0.5%;
+    text-align: right;
 }
 
 .gallery {
