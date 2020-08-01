@@ -1,15 +1,22 @@
 import React, {Component} from "react"
-// import styled from "styled-components";
+import styled from "styled-components";
 
-const ImageSlide = ({ url }) => {
+
+const SlideShow = styled.div`
+    width: 100%;
+    height: 100%;
+`;
+
+
+const ImageSlide = (props) => {
     const styles = {
-        backgroundImage: `url(${url})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        width: "100%",
+        height: "100%",
+        objectFit: "cover"
     };
 
     return (
-        <div className="image-slide" style={styles}></div>
+        <img src={props.image} className="image-slide" style={styles}/>
     );
 }
 
@@ -57,19 +64,19 @@ class Carousel extends Component{
     
     render(){
         return (
-            <div className="carousel">
+            <SlideShow>
                 <Arrow
                 direction="left"
                 clickFunction={ this.previousSlide }
                 glyph="&#9664;" />
-
-                <ImageSlide url={this.props.images[this.state.currentImageIndex]} />
-
+                <div className="gallery-image">
+                <ImageSlide image={this.props.images[this.state.currentImageIndex]} className="gallery-image" />
+                </div>
                 <Arrow
                 direction="right"
                 clickFunction={ this.nextSlide }
                 glyph="&#9654;" />
-            </div>
+            </SlideShow>
         )
     }
 }

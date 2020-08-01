@@ -26,7 +26,7 @@ const IndexPage = () => (
         </div>
         <div className="gallery">
           {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
-          <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]}/>
+          <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
         </div>
       </div>
 
