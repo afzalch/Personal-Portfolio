@@ -16,7 +16,10 @@ const ImageSlide = (props) => {
     };
 
     return (
-        <img src={props.image} className="image-slide" style={styles}/>
+        <div>
+            <img src={props.image} className="image-slide" style={styles}/>
+            <figcaption>{props.desc}</figcaption>
+        </div>
     );
 }
 
@@ -70,7 +73,7 @@ class Carousel extends Component{
                 clickFunction={ this.previousSlide }
                 glyph="&#9664;" />
                 <div className="gallery-image">
-                <ImageSlide image={this.props.images[this.state.currentImageIndex]} className="gallery-image" />
+                <ImageSlide image={this.props.images[this.state.currentImageIndex]} desc={this.props.description[this.state.currentImageIndex]}/>
                 </div>
                 <Arrow
                 direction="right"
