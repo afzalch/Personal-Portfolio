@@ -14,17 +14,19 @@ export default () => (
         </h4>
       </div>
       <div className="gallery">
-        {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
         <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
       </div>
     </div>
 
     <div className="section-alt">
-      <div className="text right">
-
+      <div className="gallery">
+        <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
       </div>
-      <div className="gallery"> 
-
+      <div className="text right">
+        <h2>Goals</h2>
+        <h4>
+        My future goals at the moment would be to graduate in the immediate future, before working in the software industry. Another goal would be to create my own YouTube channel in which I create tutorials and tips for others in the industry and/or newcomers hoping to enter the industry. A goal for me would be to teach either at a conference or to create some courses whether that is on Udemy or on some other similar site.
+        </h4>
       </div>
     </div>
 
@@ -52,7 +54,7 @@ export default () => (
 
     <div className="content">
       <h1>Future Goals</h1>
-      <h3>My future goals at the moment would be to graduate in the immediate future, before working in the software industry. Another goal would be to create my own YouTube channel in which I create tutorials and tips for others in the industry. A goal for me would be to teach either at a conference or </h3>
+      <h3></h3>
       <h1>Interests</h1>
       <h2>Programming</h2>
       <ul>

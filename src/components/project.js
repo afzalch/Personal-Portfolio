@@ -10,6 +10,7 @@ const CardWrapper = styled.div`
     width: 33%;
     height: 40%:
     margin: auto;
+    border: solid 1px white;
 `;
 
 const ImgWrapper = styled.div`
@@ -23,6 +24,7 @@ const ImgWrapper = styled.div`
         max-width: 100%;
         max-height: 100%;
         margin:0 auto;
+        object-fit: cover;
     }
 
     .overlay {
@@ -40,7 +42,7 @@ const ImgWrapper = styled.div`
         opacity: 0.5;
     }
 
-    .text {
+    .desc {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -77,7 +79,7 @@ class Project extends Component {
                 <ImgWrapper>              
                 <img src={this.props.img} className="img"/>
                 <div className="overlay">
-                    <div className="text">
+                    <div className="desc">
                         <h4>{this.props.description}</h4>
                         {this.props.tags.map((tag, index) => (
                         <Tags key={index}> #{tag}</Tags> 
