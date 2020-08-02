@@ -16,7 +16,7 @@ const IndexPage = () => (
       <div className="text left">
         <h2>What Am I Doing?</h2>
         <h4>
-          I'm a DevOps engineer as of this moment working on IBM Guardium Insights, soon to become a final year computer science student in around a month. <br />
+          I'm a DevOps engineer as of this moment working on <a href="https://www.ibm.com/ca-en/marketplace/guardium-insights" className="link">IBM Guardium Insights</a>, soon to become a final year computer science student in around a month. <br />
           Officially, my job is to bridge the gap between development code and production level code by ensuring that the development code works in a production environment. I also work with third-party products to incorporate into our product.
           <br />
           It's all about making the deadlines as stress-free as possible by finding issues in the code and bringing these issues up with the developers, so that the issues can be dealt with promptly.
@@ -25,13 +25,13 @@ const IndexPage = () => (
         </h4>
       </div>
       <div className="gallery">
-        <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
+        <Carousel images={["/images/ibm.png","/images/mcmaster.jpeg"]} description={["Currently working in the Markham software lab of IBM", "My university that I will be attending for my final year of computer science starting in September"]}/>
       </div>
     </div>
 
       <div className="section-alt">
         <div className="gallery">
-          <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
+          <Carousel images={["/images/docker.jpeg", "/images/jenkins.png"]} description={["Docker - lightweight and standalone executable package of software", "Jenkins - automation server that can be used reliably build and test software"]}/>
         </div>
         <div className="text right">
           <h2>Projects</h2>
@@ -54,7 +54,7 @@ const IndexPage = () => (
         </div>
         <div className="gallery">
           {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
-          <Carousel images={["/images/pang.jpg", "/images/gatsby-icon.png","/images/ds.jpg"]} description={["a", "b", "c"]}/>
+          <Carousel images={["/images/mit.jpg", "/images/leetcode.png"]} description={["MIT OpenCourseWare - Great resource for lot of online content in numerous different topics (CS, Math, Physisc, Humanities, etc)", "Leetcode - website similar to hackerrank that has tons of technical questions that are commonly asked in interviews"]}/>
         </div>
       </div>
 

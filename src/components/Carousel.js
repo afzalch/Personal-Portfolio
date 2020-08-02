@@ -10,10 +10,11 @@ const SlideShow = styled.div`
 const Figcaption = styled.figcaption`
     position: absolute;
     display: block;
-    width: 100%;
-    padding-bottom: 5%;
+    width: 98%;
+    padding-bottom: 2%;
+    padding-left: 2%;
     bottom: 0;
-    background: rgba(0,0,0,0.4);;
+    background: rgba(0,0,0,0.7);;
 `;
 
 const ImageSlide = (props) => {
