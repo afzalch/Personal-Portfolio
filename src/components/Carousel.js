@@ -5,6 +5,8 @@ import styled from "styled-components";
 const SlideShow = styled.div`
     width: 100%;
     height: 100%;
+    border: 2px solid darkgray;
+    box-shadow: 2px 2px #696969;
 `;
 
 const Figcaption = styled.figcaption`
@@ -13,7 +15,7 @@ const Figcaption = styled.figcaption`
     width: 98%;
     padding-bottom: 2%;
     padding-left: 2%;
-    bottom: 0;
+    bottom: -1%;
     background: rgba(0,0,0,0.7);;
 `;
 

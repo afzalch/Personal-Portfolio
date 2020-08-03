@@ -10,7 +10,6 @@ const CardWrapper = styled.div`
     width: 33%;
     height: 40%:
     margin: auto;
-    border: solid 1px white;
 `;
 
 const ImgWrapper = styled.div`

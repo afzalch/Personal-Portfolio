@@ -135,13 +135,18 @@ body.light{
     margin-bottom: 9vh;
 }
 
+// Arrow styling for carousel component
+
 .slide-arrow {
-	color: $theme-blue;
+	color: #d69eff;
 	cursor: pointer;
 	font-size: 1.5rem;
     position: absolute;
-    // display: inline-block;
 	top: 45%;
+}
+
+.slide-arrow:hover {
+    color: #5a009c;
 }
 
 .slide-arrow.right {

@@ -31,7 +31,7 @@ const IndexPage = () => (
 
       <div className="section-alt">
         <div className="gallery">
-          <Carousel images={["/images/docker.jpeg", "/images/jenkins.png"]} description={["Docker - lightweight and standalone executable package of software", "Jenkins - automation server that can be used reliably build and test software"]}/>
+          <Carousel images={["/images/docker.jpeg", "/images/jenkins.png"]} description={["Container - lightweight and standalone executable package of software", "Jenkins - automation server that can be used reliably build and test software"]}/>
         </div>
         <div className="text right">
           <h2>Projects</h2>
