@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import styled from "styled-components";
 import Resume from "../Resume.pdf";
 import {FaGithub, FaLinkedin, FaFilePdf} from "react-icons/fa";
@@ -9,6 +9,9 @@ const FooterWrapper = styled.div`
   height: 8vh;
   width: 100%;
   z-index: 10;
+`;
+
+const Icons = styled.div`
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -47,16 +50,45 @@ const Document = styled.a`
   }
 `;
 
-export default () => (
-  <FooterWrapper>
-    <SocialStyle href="https://github.com/afzalch" >
-      <FaGithub />
-    </SocialStyle>
-    <SocialStyle href="https://www.linkedin.com/in/afzal-chishti/">
-      <FaLinkedin />  
-    </SocialStyle>
-    <Document> 
-      <FaFilePdf/>
-    </Document>
-  </FooterWrapper>
-)
+const Date = styled.p`
+  display: block;
+  bottom: 0;
+`;
+
+class Footer extends Component {
+  state = {
+    date: ""
+  }
+
+  componentDidMount() {
+    fetch("https://api.github.com/repos/afzalch/Personal-Portfolio")
+    .then(res => res.json())
+    .then((data) => {
+      this.setState({date : data.updated_at} )
+    })
+    .catch(console.log)
+  }
+  
+  render() {
+    return (
+      <div>
+        <FooterWrapper>
+          <Icons>
+            <SocialStyle href="https://github.com/afzalch" >
+              <FaGithub />
+            </SocialStyle>
+            <SocialStyle href="https://www.linkedin.com/in/afzal-chishti/">
+              <FaLinkedin />  
+            </SocialStyle>
+            <Document> 
+              <FaFilePdf/>
+            </Document>
+          </Icons>
+          <Date>Last updated on: {this.state.date}</Date>
+        </FooterWrapper>
+    </div>
+    )
+  }
+}
+
+export default Footer 
