@@ -4,18 +4,19 @@ import Resume from "../Resume.pdf";
 import {FaGithub, FaLinkedin, FaFilePdf} from "react-icons/fa";
 
 const FooterWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 0;
   height: 8vh;
   width: 100%;
   z-index: 10;
+  background-color: #1d1e22;
 `;
 
 const Icons = styled.div`
   display: flex;
   align-items: center; 
   justify-content: center;
-  background-color: #1d1e22;
+
 `;
 
 const SocialStyle = styled.a`
@@ -51,8 +52,8 @@ const Document = styled.a`
 `;
 
 const Date = styled.p`
-  display: block;
-  bottom: 0;
+  display: inline;
+  float: left;
 `;
 
 class Footer extends Component {
@@ -64,7 +65,8 @@ class Footer extends Component {
     fetch("https://api.github.com/repos/afzalch/Personal-Portfolio")
     .then(res => res.json())
     .then((data) => {
-      this.setState({date : data.updated_at} )
+      var d1 = data.updated_at.slice(0,10)+" "+data.updated_at.slice(11,-1)
+      this.setState({date : d1} )
     })
     .catch(console.log)
   }
@@ -74,6 +76,7 @@ class Footer extends Component {
       <div>
         <FooterWrapper>
           <Icons>
+          <Date>Last updated on: {this.state.date}</Date> 
             <SocialStyle href="https://github.com/afzalch" >
               <FaGithub />
             </SocialStyle>
@@ -84,7 +87,6 @@ class Footer extends Component {
               <FaFilePdf/>
             </Document>
           </Icons>
-          <Date>Last updated on: {this.state.date}</Date>
         </FooterWrapper>
     </div>
     )
