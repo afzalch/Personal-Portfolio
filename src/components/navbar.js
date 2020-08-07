@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
@@ -12,16 +12,24 @@ const NavbarWrapper = styled.div`
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   background-color: #1d1e22;
 `;
 
+const Logo = styled.div`
+  float:left
+  width: 33.33333%
+`;
+
 const Navigation = styled.nav`
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
   h1{
     display: inline;
     padding: 10px 20px;
+    text-align: center;
+    position: relative;
   }
   a{
     text-align: center;
@@ -60,15 +68,44 @@ const activeStyles = {
   color: 'red',
   letterSpacing: '6px',
 };
-export default () => (
-  <NavbarWrapper>
-    <div className="logo">
-      {/* Add logo image here */}
-    </div>
-    <Navigation>
-        <h1><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
-        <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
-        <h1><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
-    </Navigation>
-  </NavbarWrapper>
-)
+
+const Date = styled.p`
+  position: absolute;
+  top: 1.5vh
+`;
+
+class Navbar extends Component {
+  state = {
+    date: ""
+  }
+
+  componentDidMount() {
+    fetch("https://api.github.com/repos/afzalch/Personal-Portfolio")
+    .then(res => res.json())
+    .then((data) => {
+      var d1 = data.updated_at.slice(0,10)+" "+data.updated_at.slice(11,-1)
+      this.setState({date : d1} )
+    })
+    .catch(console.log)
+  }
+  render () {
+    return (
+    <NavbarWrapper>
+      <Logo>
+        {/* Add logo image here */}
+      </Logo>
+      <div>
+        <Date>Last updated on: {this.state.date}</Date> 
+      </div>
+      <Navigation>
+          <h1><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
+          <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
+          <h1><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
+      </Navigation>
+      
+    </NavbarWrapper>
+    )
+  }
+}
+
+export default Navbar
