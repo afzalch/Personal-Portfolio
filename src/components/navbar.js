@@ -71,7 +71,8 @@ const activeStyles = {
 
 const Date = styled.p`
   position: absolute;
-  top: 1.5vh
+  top: 1.5vh;
+  left: 1%;
 `;
 
 class Navbar extends Component {
@@ -83,7 +84,7 @@ class Navbar extends Component {
     fetch("https://api.github.com/repos/afzalch/Personal-Portfolio")
     .then(res => res.json())
     .then((data) => {
-      var d1 = data.updated_at.slice(0,10)+" "+data.updated_at.slice(11,-1)
+      var d1 = data.updated_at.slice(0,10)+" "+data.updated_at.slice(11,-1)+" UTC"
       this.setState({date : d1} )
     })
     .catch(console.log)
