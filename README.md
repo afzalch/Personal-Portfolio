@@ -10,4 +10,6 @@ There are numerous advantages of using Gatsby such as the fact that it is a Prog
 Furthermore, Gatsby has some great support for web hosting sites such as Netlify, Github Pages, etc.
 
 ## Acknowledgements
-Though creating a personal website was a project I eventually wanted to accomplish, a former co-worker of mine, [Karlo Delalic](https://karlodelalic.me/) was the major driving force as I was able to follow in his footsteps in creating my own website. 
+Though creating a personal website was a project I eventually wanted to accomplish, a former co-worker of mine, [Karlo Delalic](https://karlodelalic.me/) was the major driving force as I was able to follow in his footsteps to create my own website. 
+
+He wrote a particular [article](https://karlodelalic.me/blog/gatsby-personal-site) that was key in explaining his own reasoning for choosing Gatsby for his own personal site and why others should also use it.
