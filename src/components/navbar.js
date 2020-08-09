@@ -37,12 +37,12 @@ const Navigation = styled.nav`
     letter-spacing: 1.75px;
     text-transform: uppercase:
     font-size: 2rem;
-    color: 	#FFA500;
-    filter: grayscale(50%);
+    color: 	#429C00;
+    filter: grayscale(65%);
     text-align: left;
   }
   a:hover {
-    filter: grayscale(0%);
+    color: #D2FF00;
     letter-spacing: 4px;
   }
 
@@ -66,7 +66,7 @@ const Navigation = styled.nav`
 `;
 
 const activeStyles = {
-  color: 'red',
+  color: '#D2FF00',
   letterSpacing: '4px',
 };
 
