@@ -21,7 +21,7 @@ const SocialStyle = styled.a`
   margin-right: 3%;
   margin-top: 1.75vh;
   color: #5a009c;
-  filter: grayscale(70%);
+  filter: grayscale(35%);
   bottom: 0;
   transition: font-size 0.15s;
   &:hover {
@@ -37,7 +37,7 @@ const Document = styled.a`
   margin-right: 3%;
   margin-top: 1.3vh;
   color: #5a009c;
-  filter: grayscale(70%);
+  filter: grayscale(35%);
   transition: font-size 0.15s;
   &:hover {
     font-size: 45px;

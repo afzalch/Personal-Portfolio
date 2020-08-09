@@ -37,12 +37,13 @@ const Navigation = styled.nav`
     letter-spacing: 1.75px;
     text-transform: uppercase:
     font-size: 2rem;
-    color: grey;
+    color: 	#FFA500;
+    filter: grayscale(50%);
     text-align: left;
   }
   a:hover {
-    color: green;
-    letter-spacing: 6px;
+    filter: grayscale(0%);
+    letter-spacing: 4px;
   }
 
   a:after, a:before {
@@ -66,7 +67,7 @@ const Navigation = styled.nav`
 
 const activeStyles = {
   color: 'red',
-  letterSpacing: '6px',
+  letterSpacing: '4px',
 };
 
 const Date = styled.p`
