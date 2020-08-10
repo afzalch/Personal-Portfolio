@@ -2,7 +2,8 @@ import React, {Component} from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-
+import { Helmet } from "react-helmet"
+import {GiHamburgerMenu} from "react-icons/gi";
 
 const NavbarWrapper = styled.div`
   position: absolute;
@@ -63,6 +64,10 @@ const Navigation = styled.nav`
     transition: width 10000ms ease-in-out;
     width: 70%;
   }
+
+  @media screen and (max-width: 1500px) {
+
+  }
 `;
 
 const activeStyles = {
@@ -93,6 +98,10 @@ class Navbar extends Component {
   render () {
     return (
     <NavbarWrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      </Helmet>
       <Logo>
         {/* Add logo image here */}
       </Logo>
@@ -104,7 +113,9 @@ class Navbar extends Component {
           <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
           <h1><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
       </Navigation>
-      
+      <a href="ww.google.com">
+        <GiHamburgerMenu/>
+      </a>
     </NavbarWrapper>
     )
   }
