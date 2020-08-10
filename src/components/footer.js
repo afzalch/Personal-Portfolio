@@ -4,7 +4,6 @@ import Resume from "../Resume.pdf";
 import {FaGithub, FaLinkedin, FaFilePdf} from "react-icons/fa";
 
 const FooterWrapper = styled.div`
-  position: absolute;
   bottom: 0;
   height: 8vh;
   width: 100%;
