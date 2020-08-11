@@ -65,9 +65,11 @@ const Navigation = styled.nav`
     width: 70%;
   }
 
-  @media screen and (max-width: 1500px) {
-
+  @media screen and (max-width: 1150px) {
+    h1 {display:none}
   }
+
+
 `;
 
 const activeStyles = {
@@ -77,8 +79,22 @@ const activeStyles = {
 
 const Date = styled.p`
   position: absolute;
-  top: 1.5vh;
+  top: 1.45vh;
   left: 1%;
+`;
+
+const Hamburger = styled.a`
+  margin-right: 2%;
+
+  @media screen and (min-width: 1150px) {
+    display:none;
+  }
+
+  @media screen and (max-width: 1150px) {
+    display: block;
+    color: 	#D2FF00;
+    filter: grayscale(55%);
+  }
 `;
 
 class Navbar extends Component {
@@ -105,17 +121,15 @@ class Navbar extends Component {
       <Logo>
         {/* Add logo image here */}
       </Logo>
-      <div>
         <Date>Last updated on: {this.state.date}</Date> 
-      </div>
       <Navigation>
           <h1><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
           <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>
           <h1><Link to="/about" activeStyle={activeStyles}>About</Link></h1>
       </Navigation>
-      <a href="ww.google.com">
-        <GiHamburgerMenu/>
-      </a>
+      <Hamburger href="ww.google.com" className="h">
+        <div><GiHamburgerMenu/></div>
+      </Hamburger>
     </NavbarWrapper>
     )
   }
