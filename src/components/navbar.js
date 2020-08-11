@@ -85,6 +85,7 @@ const Date = styled.p`
 
 const Hamburger = styled.a`
   margin-right: 2%;
+  font-size: 32px;
 
   @media screen and (min-width: 1150px) {
     display:none;
