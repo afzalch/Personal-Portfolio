@@ -10,6 +10,15 @@ const CardWrapper = styled.div`
     width: 33%;
     height: 40%:
     margin: auto;
+
+    @media screen and (max-width: 1150px) {
+        width: 50%;
+    }
+    
+    @media screen and (max-width: 850px) {
+        width: 100%;
+    }
+    
 `;
 
 const ImgWrapper = styled.div`
