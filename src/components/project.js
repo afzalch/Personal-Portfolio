@@ -11,11 +11,11 @@ const CardWrapper = styled.div`
     height: 40%:
     margin: auto;
 
-    @media screen and (max-width: 1150px) {
+    @media screen and (max-width: 1250px) {
         width: 50%;
     }
     
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 900px) {
         width: 100%;
     }
     

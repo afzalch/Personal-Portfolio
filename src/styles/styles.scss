@@ -80,6 +80,11 @@ body.light{
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 1250px) {
+        height: 35vh;
+    }
+    
 }
 
 .section-alt {
@@ -103,6 +108,10 @@ body.light{
     hyphens: auto;
     display: inline-block;
     position: relative;
+
+    @media screen and (max-width: 1250px) {
+        width: 65%;
+    }
 }
 
 .left {
@@ -119,6 +128,10 @@ body.light{
     width: 20%;
     height: 24vh;
     position: relative;
+
+    @media screen and (max-width: 1250px) {
+        width: 35vh;
+    }
 }
 
 .gallery-image {
