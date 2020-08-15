@@ -4,19 +4,27 @@ import styled from "styled-components";
 
 const SlideShow = styled.div`
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 27vh;
+    position: relative;
     border: 2px solid darkgray;
     box-shadow: 2px 2px #696969;
+    overflow: hidden;
+    margin-bottom: 100px;
 `;
 
-const Figcaption = styled.figcaption`
+const Figcaption = styled.figcaption`     
+    background: rgba(0,0,0,0.8);
+    color: #f2f2f2;
+    font-size: 15px;
     position: absolute;
-    display: block;
-    width: 98%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-    bottom: -1%;
-    background: rgba(0,0,0,0.7);;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 400px) {
+        font-size: 13px;
+    }
 `;
 
 const ImageSlide = (props) => {
@@ -88,9 +96,11 @@ class Carousel extends Component{
                 direction="left"
                 clickFunction={ this.previousSlide }
                 glyph="&#9664;" />
+
                 {/* <div className="gallery-image"> */}
                 <ImageSlide image={this.props.images[this.state.currentImageIndex]} desc={this.props.description[this.state.currentImageIndex]}/>
                 {/* </div> */}
+
                 <Arrow
                 direction="right"
                 clickFunction={ this.nextSlide }
