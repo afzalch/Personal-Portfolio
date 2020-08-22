@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "../components/navbar"
+import Navbar from "../components/Nav/Navbar"
 import Footer from "../components/footer";
 import Carousel from "../components/carousel";
 
@@ -10,9 +10,8 @@ import '../styles/styles.scss';
 const IndexPage = () => (
   <div>
     <Navbar/>  
-      
-      
-    <div className="section first">
+
+    <div className="section">
       <div className="text left">
         <h2>What Am I Doing?</h2>
         <h4>
@@ -20,8 +19,6 @@ const IndexPage = () => (
           Officially, my job is to bridge the gap between development code and production level code by ensuring that the development code works in a production environment. I also work with third-party products to incorporate into our product.
           <br />
           It's all about making the deadlines as stress-free as possible by finding issues in the code and bringing these issues up with the developers, so that the issues can be dealt with promptly.
-          <br />
-          If developers are to be considered as chefs, my role could be described as a head chef as I approve and polish the dishes(code) before they reach the customer. 
         </h4>
       </div>
       <div className="gallery">
@@ -36,7 +33,7 @@ const IndexPage = () => (
         <div className="text right">
           <h2>Projects</h2>
           <h4>
-          As of this moment, I'm not working on any projects. I am brainstorming project ideas that I can do alongside another individuals such as <a href="https://www.linkedin.com/in/syed-razi/" className="link">Razi Syed</a>. If possible, I would like to do a project in which I can have an opportunity to familiarize myself with Docker and Jenkins. Though I use those two on regular basis for work, I wish to get a feel for how to setup Jenkins pipeline for a new project and how to use Docker images to containerize parts of a product.
+          As of this moment, I'm working on a workout tracker application alongside another individuals such as <a href="https://www.linkedin.com/in/syed-razi/" className="link">Razi Syed</a> and <a href="https://www.linkedin.com/in/omer3siddiqui14/" className="link">Omer Siddiqui</a>. As all of us do workout, we thought this would be a good project in getting more experience with React and creating full stack applications. The application can be found <a href="https://github.com/Nasireen/workout-tracker" className="link">here</a>. 
           </h4>
         </div>
       </div>

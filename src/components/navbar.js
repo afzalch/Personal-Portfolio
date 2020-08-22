@@ -66,7 +66,9 @@ const Navigation = styled.nav`
   }
 
   @media screen and (max-width: 1150px) {
-    h1 {display:none}
+    h1 {
+      display: none;
+    }
   }
 
 
@@ -122,7 +124,7 @@ class Navbar extends Component {
       <Logo>
         {/* Add logo image here */}
       </Logo>
-        <Date>Last updated on: {this.state.date}</Date> 
+        <Date>Updated: {this.state.date}</Date> 
       <Navigation>
           <h1><Link to="/" activeStyle={activeStyles}>Home</Link></h1>
           <h1><Link to="/projects" activeStyle={activeStyles}>Projects</Link></h1>

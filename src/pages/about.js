@@ -1,17 +1,16 @@
 import React from "react"
-import Navbar from "../components/navbar"
+import Navbar from "../components/Nav/Navbar"
 import Footer from "../components/footer"
 import Carousel from "../components/carousel";
 
 export default () => (
   <div>
     <Navbar/>
-    <div className="section first">
+    <div className="section">
       <div className="text left">
         <h2>Who Am I?</h2>
         <h4>
-          I am a student at McMaster University who will soon be going back to school in September for my final year of my undergraduate degree. I am also the elder twin in the second set of twins in my family. However, I feel something that defines me is the fact that I am more than willing and happy to give my time and effort to help others. This is a characteristic that I have from my parents who are constantly going above and beyond what others would consider is necessary. For example, though students in Ontario only need to complete 40 hours of community service, I did over 500 with marathons, children after-school program support with Plasp, and helping the special needs program at my high school. <br />
-          Computer science is one of the best fields because of the need for your skills and the numerous ways you can assist others whether that means an organization or a person. I chose computer science so I could have an impact on the world however small that is and whether that means making an application or website that only a few people will use or lots of people will use.
+          I am a student at McMaster University who will begin my final year of my computer science degree in September. Something that is important to me is to aid other people in their endeavors. Being able to have a positive impact on other people is something that drives me and computer science is one of the best fields because of the need for your skills and the numerous ways you can assist others whether that means an organization or a person. I chose to go into computer science fields so I could have an impact on the world however small that is and whether that means making an application or website that only a few people will use or lots of people will use.
         </h4>
       </div>
       <div className="gallery">
