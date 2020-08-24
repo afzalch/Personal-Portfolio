@@ -21,6 +21,11 @@ html,body {
     h2 {
         color: $heading-color;
         font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+    }
+    h4 {
+        margin-top: 0.5%;
     }
 }
 
@@ -101,7 +106,7 @@ body.light{
 
 .text{
     width: 75%;
-    height: 90%;
+    height: 95%;
     max-width: 73%;
     overflow-wrap: break-word;
     word-wrap: break-word;
