@@ -3,7 +3,7 @@ import Navbar from "../components/Nav/Navbar"
 import Footer from "../components/footer";
 import Carousel from "../components/carousel";
 
-import '../styles/styles.scss';
+import '../styles/styles.css';
 
 
 
