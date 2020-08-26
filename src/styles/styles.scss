@@ -4,11 +4,11 @@ $font: "Helvetica Neue";
 $white: "#fff";
 $black: "#252525";
 $maroon: "#83333e";
-$off-white: "#f2f4f5";
-$primary-color: "#9A97F3";
-$heading-color: "#818cab";
-$font-color: "#e1e1ff";
-$theme-blue: "#14B6D4";
+$offWhite: "#f2f4f5";
+$primaryColor: "#9A97F3";
+$headingColor: "#818cab";
+$fontColor: "#e1e1ff";
+$themeBlue: "#14B6D4";
 
 html,body {
     font-family: $font;
@@ -17,9 +17,9 @@ html,body {
     background-color: $black;
     padding: 0;
     height: 100%;
-    color: $font-color;
+    color: $fontColor;
     h2 {
-        color: $heading-color;
+        color: $headingColor;
         font-size: 2rem;
         margin-top: 1%;
         margin-bottom: 0.5%;
@@ -30,14 +30,14 @@ html,body {
 }
 
 body.light{
-    $font-color: #424242;
-    $primary-color:#302AE6;
-    $heading-color: #292922;
-    $secondary-color: #536390;
-    background-color: $off-white;
-    color: $font-color;
+    $fontColor: #424242;
+    $primaryColor:#302AE6;
+    $headingColor: #292922;
+    $secondaryColor: #536390;
+    background-color: $offWhite;
+    color: $fontColor;
     h1 {
-        color: $heading-color;
+        color: $headingColor;
     }
     button {
         opacity: 1;
