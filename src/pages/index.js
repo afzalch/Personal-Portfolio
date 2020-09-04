@@ -22,13 +22,13 @@ const IndexPage = () => (
         </h4>
       </div>
       <div className="gallery">
-        <Carousel images={["/images/ibm.png","/images/mcmaster.jpeg"]} description={["Currently working in the Markham software lab of IBM", "My university that I will be attending for my final year of computer science starting in September"]}/>
+        <Carousel images={["../../ibm.png","../../mcmaster.jpeg"]} description={["Currently working in the Markham software lab of IBM", "My university that I will be attending for my final year of computer science starting in September"]}/>
       </div>
     </div>
 
       <div className="section-alt">
         <div className="gallery">
-          <Carousel images={["/images/docker.jpeg", "/images/jenkins.png"]} description={["Container - lightweight and standalone executable package of software", "Jenkins - automation server that can be used reliably build and test software"]}/>
+          <Carousel images={["../../docker.jpeg", "../../jenkins.png"]} description={["Container - lightweight and standalone executable package of software", "Jenkins - automation server that can be used reliably build and test software"]}/>
         </div>
         <div className="text right">
           <h2>Projects</h2>
@@ -51,7 +51,7 @@ const IndexPage = () => (
         </div>
         <div className="gallery">
           {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
-          <Carousel images={["/images/mit.jpg", "/images/leetcode.png"]} description={["MIT OpenCourseWare - Great resource for lot of online content in numerous different topics (CS, Math, Physisc, Humanities, etc)", "Leetcode - website similar to hackerrank that has tons of technical questions that are commonly asked in interviews"]}/>
+          <Carousel images={["../../mit.jpg", "../../leetcode.png"]} description={["MIT OpenCourseWare - Great resource for lot of online content in numerous different topics (CS, Math, Physisc, Humanities, etc)", "Leetcode - website similar to hackerrank that has tons of technical questions that are commonly asked in interviews"]}/>
         </div>
       </div>
 

@@ -1,16 +1,16 @@
 $font: "Helvetica Neue";
 
 // Colors:
-$white: "#fff";
-$black: "#252525";
-$maroon: "#83333e";
-$offWhite: "#f2f4f5";
-$primaryColor: "#9A97F3";
-$headingColor: "#818cab";
-$fontColor: "#e1e1ff";
-$themeBlue: "#14B6D4";
+$white: #fff;
+$black: #252525;
+$maroon: #83333e;
+$offWhite: #f2f4f5;
+$primaryColor: #9A97F3;
+$headingColor: #818cab;
+$fontColor: #e1e1ff;
+$themeBlue: #14B6D4;
 
-html,body {
+html,body{
     font-family: $font;
     font-size: 16px;
     margin: 0 0;
@@ -64,7 +64,9 @@ body.light{
 
 .content {
     width: 100%;
-    height: 84vh;
+    height: 75vh;
+    background-color: #414141;
+    padding-top: 8vh;
 }
 
 .link {
