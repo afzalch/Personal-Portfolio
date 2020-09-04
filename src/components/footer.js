@@ -29,6 +29,11 @@ const SocialStyle = styled.a`
   }
 `;
 
+const buttonStyle = {
+  fontSize: "25px",
+  margin: "10px",
+};
+
 
 const Document = styled.a`
   font-size: 34px;
@@ -53,7 +58,9 @@ export default () => (
       <FaLinkedin />  
     </SocialStyle>
     <Document> 
-      <FaFilePdf/>
+      <a href={Resume} target="_blank" rel="nofollow noopener noreferrer">
+          <FaFilePdf/>
+      </a>
     </Document>
   </FooterWrapper>
 )
