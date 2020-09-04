@@ -14,13 +14,13 @@ export default () => (
         </h4>
       </div>
       <div className="gallery">
-        <Carousel images={["/images/plasp.jpeg", "/images/volunteeringPeel.png"]} description={["PLASP - Childcare services which I volunteered with for over 100 hours over the course of 2 years", "Organization I worked with over course of 3 years to assist in events around the Peel Region"]}/>
+        <Carousel images={["../../plasp.jpeg", "../../volunteeringPeel.png"]} description={["PLASP - Childcare services which I volunteered with for over 100 hours over the course of 2 years", "Organization I worked with over course of 3 years to assist in events around the Peel Region"]}/>
       </div>
     </div>
 
     <div className="section-alt">
       <div className="gallery">
-        <Carousel images={["/images/degree.jpeg", "/images/youtube.jpg"]} description={["Completing my undergrad degree in computer science", "Creating an educational YouTube channel"]}/>
+        <Carousel images={["../../degree.jpeg", "../../youtube.jpg"]} description={["Completing my undergrad degree in computer science", "Creating an educational YouTube channel"]}/>
       </div>
       <div className="text right">
         <h2>Goals</h2>
@@ -46,7 +46,7 @@ export default () => (
       </div>
       <div className="gallery">
         {/* <img src="/images/gatsby-icon.png" className="gallery-image"></img> */}
-        <Carousel images={["/images/ansible.png", "/images/angular.png"]} description={["Ansible - tool that is game changer in Devops due to its' ability to automate tasks", "Angular - a very popular web framework that is still used quite commonly"]}/>
+        <Carousel images={["../../ansible.png", "../../angular.png"]} description={["Ansible - tool that is game changer in Devops due to its' ability to automate tasks", "Angular - a very popular web framework that is still used quite commonly"]}/>
       </div>
     </div>
     <Footer/>

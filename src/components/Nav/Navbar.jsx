@@ -8,6 +8,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color: #1d1e22;
+  align-items: center;
 
   .logo {
     position: absolute;

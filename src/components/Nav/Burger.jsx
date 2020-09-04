@@ -6,7 +6,7 @@ const StyledBurger = styled.div`
   height: 2rem;
   position: fixed;
   margin-right: 1%;
-  top: 15px;
+  padding-top: 1%
   right: 0;
   padding-right: 1%;
   z-index: 20;
@@ -21,7 +21,7 @@ const StyledBurger = styled.div`
 
   div {
     width: 2rem;
-    height: 0.25rem;
+    height: 0.5rem;
     right: 0;
     background-color: ${({ open }) => open ? '#ccc' : '#333'};
     border-radius: 10px;
