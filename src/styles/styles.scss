@@ -1,0 +1,167 @@
+$font: "Helvetica Neue";
+
+// Colors:
+$white: #fff;
+$black: #252525;
+$maroon: #83333e;
+$offWhite: #f2f4f5;
+$primaryColor: #9A97F3;
+$headingColor: #818cab;
+$fontColor: #e1e1ff;
+$themeBlue: #14B6D4;
+
+html,body{
+    font-family: $font;
+    font-size: 16px;
+    margin: 0 0;
+    background-color: $black;
+    padding: 0;
+    height: 100%;
+    color: $fontColor;
+    h2 {
+        color: $headingColor;
+        font-size: 2rem;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+    }
+    h4 {
+        margin-top: 0.5%;
+    }
+}
+
+body.light{
+    $fontColor: #424242;
+    $primaryColor:#302AE6;
+    $headingColor: #292922;
+    $secondaryColor: #536390;
+    background-color: $offWhite;
+    color: $fontColor;
+    h1 {
+        color: $headingColor;
+    }
+    button {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    @media(max-width: 1440px) {
+        width: 1280px;
+        min-width: 1280px;
+    }
+    @media(max-width: 1280px){
+        width: 976px;
+        min-width: 976px;
+    }
+    @media (max-width: 976px){
+        width: 768px;
+        min-width: 768px;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 76vh;
+    background-color: #414141;
+    padding-top: 8vh;
+}
+
+.link {
+    text-decoration: none;
+    color: teal;
+}
+
+.link:hover{
+    color: #2a6592;
+}
+
+.section {
+    width: 100%;
+    height: 28vh;
+    background-color: #414141;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 1250px) {
+        height: 35vh;
+    }
+    
+}
+
+.section-alt {
+    width: 100%;
+    height: 28vh;
+    background-color: #313131;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.text{
+    width: 75%;
+    height: 95%;
+    max-width: 73%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    display: inline-block;
+    position: relative;
+
+    @media screen and (max-width: 1250px) {
+        width: 65%;
+    }
+}
+
+.left {
+    padding-right: 1%;
+    text-align: left;
+}
+
+.right {
+    padding-left: 1%;
+    text-align: right;
+}
+
+.gallery {
+    width: 20%;
+    height: 24vh;
+    position: relative;
+
+    @media screen and (max-width: 1250px) {
+        width: 35vh;
+    }
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+}
+// Arrow styling for carousel component
+.slide-arrow {
+	color: #d69eff;
+	cursor: pointer;
+	font-size: 1.5rem;
+    position: absolute;
+	top: 45%;
+}
+
+.slide-arrow:hover {
+    color: #5a009c;
+}
+
+.slide-arrow.right {
+	right: 1rem;
+}
+
+.slide-arrow.left {
+	left: 1rem;
+}
