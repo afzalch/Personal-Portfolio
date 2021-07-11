@@ -6,7 +6,7 @@ import Project from "../components/project"
 const SecondPage = () => (
   <div>
     <Navbar/>
-    <div className="content">
+    <div className="projects">
       <Project title="Laser Defender" img="../../laser-defender.jpg" tags={['game-dev','unity', 'C#']} link="https://github.com/afzalch/LaserDefender" description="A survival/horde mode game in which player must survive numerous waves of enemies of increasing difficulty. " />
       <Project title="Pang" img="../../pang.jpg"  tags={['game-dev', 'openGL', 'C++']} link="https://github.com/afzalch/Pang" /> 
       <Project title="Blog App" img="../../ds.jpg"  tags={['web-dev', 'openGL', 'javaScript', 'node', 'express', 'mongoDB']} link="https://github.com/afzalch/Blog-App" description="A web application that allows users to create blog posts that are stored on a database. " />
