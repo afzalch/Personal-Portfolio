@@ -40,7 +40,7 @@ const Document = styled.a`
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 1.3vh;
-  color: #5a009c;
+  color: #800080;
   filter: grayscale(35%);
   transition: font-size 0.15s;
   &:hover {
@@ -57,10 +57,12 @@ export default () => (
     <SocialStyle href="https://www.linkedin.com/in/afzal-chishti/">
       <FaLinkedin />  
     </SocialStyle>
-    <Document> 
-      <a href={Resume} target="_blank" rel="nofollow noopener noreferrer">
-          <FaFilePdf/>
-      </a>
-    </Document>
+    <SocialStyle>
+      <Document> 
+        <a href={Resume} target="_blank" rel="nofollow noopener noreferrer">
+            <FaFilePdf/>
+        </a>
+      </Document>
+    </SocialStyle>
   </FooterWrapper>
 )

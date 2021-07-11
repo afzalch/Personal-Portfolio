@@ -15,14 +15,14 @@ const IndexPage = () => (
       <div className="text left">
         <h2>What Am I Doing?</h2>
         <h4>
-          I'm a DevOps engineer as of this moment working on <a href="https://www.ibm.com/ca-en/marketplace/guardium-insights" className="link">IBM Guardium Insights</a>, soon to become a final year computer science student in around a month. <br />
+          I'm a DevOps engineer as of this moment working on <a href="https://www.ibm.com/ca-en/marketplace/guardium-insights" className="link">IBM Guardium Insights</a>, after completing my  computer science degree in May. <br />
           Officially, my job is to bridge the gap between development code and production level code by ensuring that the development code works in a production environment. I also work with third-party products to incorporate into our product.
           <br />
           It's all about making the deadlines as stress-free as possible by finding issues in the code and bringing these issues up with the developers, so that the issues can be dealt with promptly.
         </h4>
       </div>
       <div className="gallery">
-        <Carousel images={["../../ibm.png","../../mcmaster.jpeg"]} description={["Currently working in the Markham software lab of IBM", "My university that I will be attending for my final year of computer science starting in September"]}/>
+        <Carousel images={["../../ibm.png","../../mcmaster.jpeg"]} description={["Currently working in the Markham software lab of IBM", "The university I completed my bachelors from"]}/>
       </div>
     </div>
 
@@ -42,7 +42,7 @@ const IndexPage = () => (
         <div className="text left">
           <h2>Learning</h2>
           <h4>
-            Learning and constantly growing is something that is fundamental to the job as someone in the CS field. As of this moment, I do not have any courses planned to take over the next month as I soon begin my final year of my undergraduate degree in September. I am reviewing both my data structure and algorithms knowledge by doing Leetcode problems as well as watching Youtube videos on said topics. 
+            Learning and constantly growing is something that is fundamental to the job as someone in the CS field. As of this moment, I am taking some courses to learn Ansible in more detail. I am also reviewing my knowledge of data structures and algorithms with the resources linked below. 
             <br />
             <a href="https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" className="link">MIT OpenCourseWare</a><br />
             <a href="https://www.youtube.com/watch?v=09_LlHjoEiY&list=PLClglAy38DbzMCP7mjyaKxsktp7ZOwFuG&index=14&t=2392s" className="link">Graph Theory</a><br />
